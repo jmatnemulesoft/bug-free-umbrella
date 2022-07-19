@@ -95,5 +95,5 @@ jobs:
         artifactName=$(ls *.jar | head -1)
         mvn deploy -DmuleDeploy -Dtarget="dev" -DtargetType="server" \
         -Dusername="${{secrets.ANYPOINT_USERNAME}}" -Dpassword="${{secrets.ANYPOINT_PASSWORD}}" \
-        -Denvironment="dev" -DbusinessGroupId="78b69d58-41f6-4878-9b2e-6b95ef3cb67c"
+        -Denvironment="dev" -DbusinessGroupId="78b69d58-41f6-4878-9b2e-6b95ef3cb67c" -Dapp.name="hello-jm-18"
 
